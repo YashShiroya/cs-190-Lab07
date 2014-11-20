@@ -33,6 +33,12 @@ def mult(a, b):
 def div(a, b):
     return a / b
 
+# Exponential function
+# a -- base
+# b -- exponent
+def exp(a, b):
+	return (a**b)
+
 
 # -------------------------------------------------------- #
 
@@ -59,16 +65,18 @@ while (True):
 
     # decide function
     if (op != None):
-        if (op == "+"):
-            print "Sum: ", add(a, b)
-        elif (op == "-"):
-            print "Difference: ", sub(a, b)
-        elif (op == "*"):
-            print "Product: ", mult(a, b)
-        elif (op == "/"):
-            print "Quotient: ", div(a, b)
-        else:
-            print "Invalid operation..."
+      if (op == "+"):
+        print "Sum: ", add(a, b)
+      elif (op == "-"):
+        print "Difference: ", sub(a, b)
+      elif (op == "*"):
+        print "Product: ", mult(a, b)
+      elif (op == "/"):
+        print "Quotient: ", div(a, b)
+      elif (op == "**"):
+        print "first raised to the power second argument: ", exp(a, b)
+      else:
+        print "Invalid operation..."
 
     q = raw_input("Quit? [y/n] ")
     if (q == "y" or q == "Y"):
