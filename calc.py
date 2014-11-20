@@ -33,6 +33,11 @@ def mult(a, b):
 def div(a, b):
     return a / b
 
+#Modulus
+#a a -- integer
+def mod (a, b):
+	return a % b
+
 
 # -------------------------------------------------------- #
 
@@ -52,6 +57,7 @@ while (True):
     b = raw_input("Enter the second argument: ")
     try:
         a = int(a)
+    
         b = int(b)
     except ValueError:
         print "Invalid number argument..."
@@ -67,6 +73,8 @@ while (True):
             print "Product: ", mult(a, b)
         elif (op == "/"):
             print "Quotient: ", div(a, b)
+        elif (op == "%"):
+			print "Modulo: " , mod (a, b)
         else:
             print "Invalid operation..."
 
